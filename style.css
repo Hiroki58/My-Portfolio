@@ -141,6 +141,36 @@ figure{
     margin-right: 30%;
 }
 
+#caption{
+    margin-top: 30%;
+    opacity: 0.95;
+    width: 200px;
+    height: 300px;
+    background-color: rgb(250, 246, 229);
+    position: absolute;
+    transform: translate(-120%,0);
+    text-align: center;
+    font-family: 'Kosugi Maru', sans-serif;
+    line-height: 1.5rem;
+
+
+}
+
+#caption.show{
+    margin-left: 5%;
+    width: 400px;
+    transform: translate(0, 0) !important;
+
+}
+
+#caption:hover{
+    display: none;
+}
+
+#contactmessage1{
+    font-size: 200%;
+}
+
 input[type=text], select, textarea {
     width: 100%; 
     padding: 12px;  
