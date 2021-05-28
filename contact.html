@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <link rel="stylesheet" href="style.css" type="text/css">
+        </head>
+            <body>
+                <header>
+                    <h1><a href="./index.html"><strong>HIROKI OKUMURA</strong></a></h1>
+                    <nav>
+                        <ul>
+                            <li id="menu"><a href="./aboutme.html">ABOUT ME</a></li>
+                            <li id="menu"><a href="./skills.html">SKILLS</a></li>
+                            <li id="menu"><a href="./projects.html">PROJECTS</a></li>
+                            <li id="menu"><a href="./contact.html">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <div class="topic" id="contactme"><p>CONTACT ME</p></div>
+                <div class="instagram">
+                    <div class="instavideo"><video id="iphone" src="./video/Automatic 2.MP4" autoplay muted loop preload="auto" width="80%" height="80%"　playinline></video></div>
+                    <div class="contactlist">
+                        <div class="instalink"><a href="https://www.instagram.com/hiroki_4dg/?hl=ja"><img src="./image/Instagram_Glyph_Gradient_RGB.png" id="instaicon"><div>@hiroki_4dg</div></a></div>
+                        <div class="linelink"><a href="./contact.html"><img src="./image/LINE_SOCIAL_Basic.png" id="lineicon"><div id="line username">Hiroki_Okumura</div></a></div>
+                    </div>
+                </div>
+                <div class="contactcontainer">
+                    <form action="https://api.staticforms.xyz/submit" method="POST">
+                      <label for="name">Name</label>
+                      <input type="text" id="name" name="name" placeholder="フルネーム">
+                  
+                      <label for="email">E-mail</label>
+                      <input type="text" name="email" placeholder="アドレスを入力してください">
+                                    
+                      <label for="message">問い合わせ内容</label>
+                      <textarea  name="message" placeholder="ご自由に記入ください" style="height:200px"></textarea>
+                      <input type="hidden" name="redirectTo" value="https://www.instagram.com/?hl=ja">      
+                      <input type="submit" value="送信">
+                      <input type="hidden" name="accessKey" value="1a89589a-052e-4d90-a066-e07f39797ac7">
+
+                    </form>
+                  </div>
+                <footer>©︎Hiroki Okumura</footer>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                <script src ="./script.js"></script>
+            </body>
+    </html>

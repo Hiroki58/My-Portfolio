@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja" >
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./pianostyle.css">
+</head>
+
+<body>
+  <p class='title'>Piano Player</p>
+  <p id='demo'>マウスクリックでピアノを弾いてみよう！</p>
+  <section class="piano">
+    <section id='c-key' class="key">
+        <br><section class='keynote'>ド</section>
+        <audio id="c3" class="sound" src="./mp3 Notes/c3.mp3" preload="auto"></audio>
+    </section>
+    <section id='c-sharp-key' class="black-key">
+      <section class='black-keynote'>ド#</section>
+      <audio id="c-3" class="sound" src="./mp3 Notes/c-3.mp3" preload="auto"></audio>
+    </section>
+    <section id='d-key' class="key">
+        <br><section class='keynote'>レ</section>
+        <audio id="d3" class="sound" src="./mp3 Notes/d3.mp3" preload="auto"></audio>
+    </section>
+    <section id='d-sharp-key' class="black-key">
+      <section class='black-keynote'>レ#</section>
+      <audio id="d-3" class="sound" src="./mp3 Notes/d-3.mp3" preload="auto"></audio>
+    </section>
+    <section id='e-key' class="key">
+        <br><section class='keynote'>ミ</section>
+        <audio id="e3" class="sound" src="./mp3 Notes/e3.mp3" preload="auto"></audio>
+    </section>
+    <section id='f-key' class="key">
+      <section class='keynote'>ファ</section>
+      <audio id="f3" class="sound" src="./mp3 Notes/f3.mp3" preload="auto"></audio>
+    </section>
+    <section id='f-sharp-key' class="black-key">
+      <section class='black-keynote'>ファ#</section>
+      <audio id="f-3" class="sound" src="./mp3 Notes/f-3.mp3" preload="auto"></audio>
+    </section>
+    <section id='g-key' class="key">
+        <br><section class='keynote'>ソ</section>
+        <audio id="g3" class="sound" src="./mp3 Notes/g3.mp3" preload="auto"></audio>
+    </section>
+    <section id='g-sharp-key' class="black-key">
+      <section class='black-keynote'>ソ#</section>
+      <audio id="g-3" class="sound" src="./mp3 Notes/g-3.mp3" preload="auto"></audio>
+    </section>
+    <section id='a-key' class="key">
+        <br><section class='keynote'>ラ</section>
+        <audio id="a4" class="sound" src="./mp3 Notes/a4.mp3" preload="auto"></audio>
+    </section>
+    <section id='a-sharp-key' class="black-key">
+      <section class='black-keynote'>ラ#</section>
+      <audio id="a-4" class="sound" src="./mp3 Notes/a-4.mp3" preload="auto"></audio> 
+    </section>
+    <section id='b-key' class="key">
+        <br><section class='keynote'>シ</section>
+        <audio id="b4" class="sound" src="./mp3 Notes/b4.mp3" preload="auto"></audio>
+    </section>
+    <section id='high-c-key' class="key">
+        <br><div class='keynote'>ド</div>
+        <audio id="c4" class="sound" src="./mp3 Notes/c4.mp3" preload="auto"></audio>
+    </section>
+    <section id='high-c-sharp-key' class="black-key">
+      <section class='black-keynote'>ド#</section>
+      <audio id="c-4" class="sound" src="./mp3 Notes/c-4.mp3" preload="auto"></audio>
+    </section>
+    <section id='high-d-key' class="key">
+        <br><div class='keynote'>レ</div>
+        <audio id="d4" class="sound" src="./mp3 Notes/d4.mp3" preload="auto"></audio>
+    </section>
+    <section id='high-d-sharp-key' class="black-key">
+      <section class='black-keynote'>レ#</section>
+      <audio id="d-4" class="sound" src="./mp3 Notes/d-4.mp3" preload="auto"></audio>
+    </section>
+    <section id='high-e-key' class="key">
+        <br><div class='keynote'>ミ</div>
+        <audio id="e4" class="sound" src="./mp3 Notes/e4.mp3" preload="auto"></audio>
+    </section>
+    <section id='high-f-key' class="key">
+      <div class='keynote'>ファ</div>
+      <audio id="f4" class="sound" src="./mp3 Notes/f4.mp3" preload="auto"></audio>
+    </section>
+  </section>
+
+  <section id='lyrics'>
+    <section id='column-one'>
+      <section id="word-one">HAP-</section>
+      <section id="letter-note-one">ソ</section>
+    </section>
+    <section id='column-two'>
+      <section id="word-two">PY</section>
+      <section id="letter-note-two">ソ</section>
+    </section>
+    <section id='column-three'>
+      <section id="word-three">BIRTH-</section>
+      <section id="letter-note-three">ラ</section>
+    </section>
+    <section id='column-four'>
+      <section id="word-four">DAY</section>
+      <section id="letter-note-four">ソ</section>
+    </section>
+    <section id='column-five'>
+      <section id="word-five">TO</section>
+      <section id="letter-note-five">ド</section>
+    </section>
+    <section id='column-six'>
+      <section id="word-six">YOU</section>
+      <section id="letter-note-six">シ</section>
+    </section>
+    <section id='column-optional' class='column-optional'>
+      <section id="word-optional">END</section>
+      <section id="letter-note-optional">ラ</section>
+    </section>
+
+    <button id="first-next-line">次へ</button>
+    <button id="second-next-line">次へ</button>
+    <button id="third-next-line">次へ</button>
+    <button id="fourth-next-line">リセット</button>
+  </section>
+
+  <script  src="./pianomain.js"></script>
+
+</body>
+</html>

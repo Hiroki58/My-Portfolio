@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
+
+/*universal styles*/
+
+body{
+    font-family: 'Open Sans Condensed', sans-serif;  
+}
+
+header{
+    border-bottom: solid 1px #c6c1c1;
+    margin-bottom: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/*top page*/
+
+nav{
+    float: right;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    text-align: right;
+}
+
+#menu{
+    margin: 20px;
+    margin-top: -4.375rem;
+    padding-left: 3.5rem; 
+}
+
+#menu:hover{
+    font-size: 150%;
+    font-weight: bold;
+}
+
+#banner{
+    height: 95%;
+    width: 95%;
+    margin-top: -1.8rem;
+    animation: fadeIn 3s ease 0s 1 normal;
+}
+
+@keyframes fadeIn { /*上のbody内で呼び出しているアニメーションと名前をそろえる*/
+    0% {opacity: 0} /* 始め */
+    100% {opacity: 1} /* 終わり */
+}
+
+footer{
+    position: fixed;
+    border-top: solid 1px #c6c1c1;
+    background-color: black;
+    color: blanchedalmond;
+    text-align: center;
+    bottom: 0; 
+    width: 100%;
+}
+
+/*skills page*/
+
+.container{
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.item img{
+    width: 12.5rem;
+    height: 12.5rem;
+    align-items: center;
+}
+
+.item img:hover{
+    width: 14rem;
+    height: 14rem;
+}
+
+.item:hover .text{
+    text-align: center;
+    font-size: 200%;
+    opacity: 1;
+}
+
+
+figure{
+    text-align: center;
+    font-size: 200%;
+    opacity: 0;
+}
+
+/*contact page*/
+
+#contactme{
+    color: black;
+    background-image: url('./image/AdobeStock_340879734.png');
+    background-size: 100%;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-color:rgba(255,255,255,0.5);
+    background-blend-mode:lighten;
+}
+
+
+
+.instagram{
+    display: flex;
+    height: auto;
+    width: 100%;
+}
+
+.instalink,.linelink{
+    margin-top: 10%;
+    text-align: center;
+}
+
+.contactlist{
+    margin-top: 10%;
+    justify-content: center;
+}
+
+.instalink img,.linelink img{
+    width: 20%;
+    height: auto;
+}
+
+.instalink img:hover,.linelink img:hover{
+    width:25%;
+    height: auto;
+}
+
+#iphone{
+    margin-top: 10%;
+    margin-left: 40%;
+    margin-right: 30%;
+}
+
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px;  
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+}
+  
+  /* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.contactcontainer {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* projects page*/
+
+.projects{
+    text-align: center;
+}
+
+#piano{
+    width: 70%;
+    height: 70%;
+}
+
+/* aboutme page */
+
+.topic{
+    opacity: 0.1;
+    height: 50%;
+    width: 100%;
+    font-size: 1000%;
+    border: solid 1px #c6c1c1;
+    text-align: center;
+}
+
+.isAnimate{
+    opacity: 1;
+    animation: fadeIn 2s ease 0s 1 normal;
+
+}
+
+.engineerblock{
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.slideConts {
+  opacity: 0.1;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+}
+#engineervideo {
+  width: 100%;
+  height: 400px;
+  background-color: lightpink;
+  transform: translate(-120%, 0);
+  position: relative;
+}
+
+#engineervideo.show{
+    transform: translate(0, 0) !important;
+}
+
+#engineertext {
+  text-align: left;
+  font-size: 1.9rem;
+  font-family: 'Kosugi Maru', sans-serif;
+  line-height: 2.5rem;
+  width: 500px;
+  height: auto;  
+  background-color: lightblue;
+  transform: translate(1500px, 0);
+  position: absolute;
+  padding-left: 1rem;
+}
+
+.slideContsL.show {
+    opacity: 1;
+    transform: translate(-50px, 0) !important;
+}
+  
+.slideContsR.show {
+    opacity: 1;
+    transform: translate(50px, 0) !important;
+}
+    
+  
+.trainerblock{
+    display: flex;
+    margin: 5%;
+}
+
+#trainervideo {
+  width: 100%;
+  height: 400px;
+  background-color: red;
+  transform: translate(-120%, 0);
+  position: relative;
+}
+
+#trainervideo.show{
+    opacity: 0.5;
+}
+
+#trainertext {  
+    text-align: left;
+    font-size: 1.9rem;
+    font-family: 'Kosugi Maru', sans-serif;
+    line-height: 2.5rem;
+    width: 500px;
+    height: auto;  
+    background-color: lightblue;
+    position: absolute;
+    padding-left: 1rem;
+    background-color: blue;
+    transform: translate(1500px, 0);
+    position: absolute;
+}
+
+#trainertext.show{
+    transform: translate(700px, 0) !important;
+}
+
+
+
+
