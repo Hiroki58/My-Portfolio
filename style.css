@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 /*universal styles*/
 
@@ -8,9 +10,24 @@ body{
     font-family: 'Open Sans Condensed', sans-serif;  
 }
 
+h1{
+    margin-left: 10%;
+    font-family: 'Shadows Into Light', cursive;
+}
 header{
     border-bottom: solid 1px #c6c1c1;
     margin-bottom: 0px;
+    box-shadow: 0.5px ;
+
+}
+
+.atBottom{
+    position:fixed;
+    top:0;
+    z-index: 99;
+    width: 100%;
+    background-color: white;
+    height: 15%;
 }
 
 a{
@@ -75,6 +92,7 @@ footer{
     width: 12.5rem;
     height: 12.5rem;
     align-items: center;
+    filter: drop-shadow(2px 2px grey);
 }
 
 .item img:hover{
@@ -105,6 +123,7 @@ figure{
     background-repeat: no-repeat;
     background-color:rgba(255,255,255,0.5);
     background-blend-mode:lighten;
+    box-shadow: 3px 3px gray;
 }
 
 
@@ -128,6 +147,7 @@ figure{
 .instalink img,.linelink img{
     width: 20%;
     height: auto;
+    filter:drop-shadow(3px 3px grey)
 }
 
 .instalink img:hover,.linelink img:hover{
@@ -152,6 +172,7 @@ figure{
     text-align: center;
     font-family: 'Kosugi Maru', sans-serif;
     line-height: 1.5rem;
+    box-shadow: 2px 2px ;
 
 
 }
@@ -190,6 +211,7 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  box-shadow: 1px 1px green;
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
@@ -210,10 +232,97 @@ input[type=submit]:hover {
     text-align: center;
 }
 
-#piano{
-    width: 70%;
-    height: 70%;
+#ptopic{
+    background-color:rgba(255,255,255,0.1);
+    background-image:url('./image/coding.jpeg');
+    background-blend-mode:lighten;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 100%;
+    height: 100%;
+    width: auto;
+    color: #f2f2f2;
+    font-family: 'Anton', sans-serif;
 }
+
+#menudesign{
+    background-color:rgba(255,255,255,0.1);
+    background-image:url('./image/menudesign.jpeg');
+    background-blend-mode:lighten;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 100%;
+    height: 100%;
+    width: auto;
+    color: #f2f2f2;
+    font-family: 'Anton', sans-serif;
+}
+
+#photoshop{
+    background-image: url('./image/photoshop.png');
+    background-color:rgba(255,255,255,0.1);
+    background-blend-mode:lighten;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 100%;
+    height: 100%;
+    width: auto;
+    color: #f2f2f2;
+    font-family: 'Anton', sans-serif;
+}
+
+.designblock{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+
+ .menublock{
+     margin-top: 5%;
+     margin-left: 5%;
+     margin-bottom: 5%;
+     text-align: center;
+     background-color: white;
+     font-family: 'Kosugi Maru', sans-serif;
+     line-height: 2rem;
+     padding-left: -50rem;
+     padding-right: -50rem;
+ }
+
+
+.menublock img{
+    height: auto;
+    width: 70%;
+    box-shadow: 1px 1px grey;
+}
+
+.photoblock{
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+.photoblock img{
+    width: 100%;
+    height: auto;
+    box-shadow: 1px 1px grey;
+}
+
+#piano{
+    width: 50%;
+    height: 50%;
+    border: solid 1px grey;
+    box-shadow: 1px 1px grey;
+}
+
+.piano{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
 
 /* aboutme page */
 
@@ -224,6 +333,7 @@ input[type=submit]:hover {
     font-size: 1000%;
     border: solid 1px #c6c1c1;
     text-align: center;
+    text-shadow: 2px 2px gray;
 }
 
 .isAnimate{
@@ -263,7 +373,7 @@ input[type=submit]:hover {
   line-height: 2.5rem;
   width: 500px;
   height: auto;  
-  background-color: lightblue;
+  background-color: white;
   transform: translate(1500px, 0);
   position: absolute;
   padding-left: 1rem;
@@ -307,7 +417,7 @@ input[type=submit]:hover {
     background-color: lightblue;
     position: absolute;
     padding-left: 1rem;
-    background-color: blue;
+    background-color: white;
     transform: translate(1500px, 0);
     position: absolute;
 }

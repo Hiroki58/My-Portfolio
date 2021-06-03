@@ -50,3 +50,18 @@ window.addEventListener('scroll', function () {
   }
 });
 
+
+$(window).scroll(function() {
+
+  var element = $('header')
+  var atBottom = ('atBottom')
+  element.each(function(){
+    if($(window).scrollTop() + $(window).height() == $(document).height()) {
+      $(this).addClass(atBottom)
+    }else{
+      $(this).removeClass(atBottom)
+    }
+  });
+    
+});
+
